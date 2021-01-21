@@ -128,7 +128,7 @@
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="<?php echo base_url(); ?>" class="simple-text">
-                    <i class="pe-7s-study"></i> Raport K13
+                    <i class="pe-7s-study"></i> ERAPORT
                 </a>
             </div>
             <ul class="nav">
@@ -136,7 +136,7 @@
                 $level = $this->session->userdata("level");
                 $walikelas = $this->session->userdata("walikelas");
 
-                echo generate_menu($level, $walikelas['is_wali']);  
+                echo @generate_menu($level, $walikelas['is_wali']);
                 ?>
             </ul>
             
@@ -153,7 +153,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo base_url(); ?>"><i class="pe-7s-study"></i> Raport K13</a>
+                    <a class="navbar-brand" href="<?php echo base_url(); ?>"><i class="pe-7s-study"></i> E - Raport</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
